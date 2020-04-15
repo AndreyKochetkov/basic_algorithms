@@ -1,5 +1,11 @@
 from pytest import mark
 
+"""
+Дано целое число 1≤n≤40,
+необходимо вычислить n n n-е число Фибоначчи.
+F0=0, F1=1 и Fn = Fn−1 + Fn−2 при n≥2
+"""
+
 
 def get_n_fib_number(n: 'int') -> 'int':
     if n == 0 or n == 1:
@@ -7,7 +13,7 @@ def get_n_fib_number(n: 'int') -> 'int':
 
     previous = 0
     current = 1
-    for i in range(2, n + 1):
+    for _ in range(2, n + 1):
         previous, current = current, current + previous
 
     return current
