@@ -3,3 +3,4 @@
 .idea/
 
 /venv/
+/.mypy_cache/
