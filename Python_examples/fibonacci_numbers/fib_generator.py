@@ -28,4 +28,4 @@ if __name__ == "__main__":
 
 def test_success():
     generator = fibonacci(10)
-    assert [1, 1, 2, 3, 5, 8, 13, 21, 34, 55] == [i for i in generator]
+    assert [1, 1, 2, 3, 5, 8, 13, 21, 34, 55] == [i for i in generator], 'Неверные числа Фибоначчи'
